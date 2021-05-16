@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RVAdapter(private val stateList: List<StateModal>): RecyclerView.Adapter<RVAdapter.StateRVViewHolder>() {
+class StateRVAdapter(private val stateList: List<StateModal>): RecyclerView.Adapter<StateRVAdapter.StateRVViewHolder>() {
     class StateRVViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
-    { val stateNameTV: TextView=itemView.findViewById(R.id.idTVState)
+    {   val stateNameTV: TextView=itemView.findViewById(R.id.idTVState)
         val casesTV:TextView=itemView.findViewById(R.id.idTVCases)
         val deathsTV:TextView=itemView.findViewById(R.id.idTVDeaths)
         val recoveredTV:TextView=itemView.findViewById(R.id.idTVRecovered)
@@ -17,7 +17,7 @@ class RVAdapter(private val stateList: List<StateModal>): RecyclerView.Adapter<R
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StateRVViewHolder {
-       val itemView=LayoutInflater.from(parent.context).inflate(R.layout.state_view_item,parent,false,)
+       val itemView=LayoutInflater.from(parent.context).inflate(R.layout.state_view_item,parent,false)
         return  StateRVViewHolder(itemView)
 
     }

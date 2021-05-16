@@ -211,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:id="@+id/idTVIndiaRecoverd"
+                    android:id="@+id/idTVIndiaRecovered"
                     android:gravity="center_horizontal"
                     android:text= "Recovered count"
                     android:textColor="@color/green"
@@ -268,9 +268,8 @@
 <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/idRVStatesIndia "
-    android:padding="3dp"
-    android:layout_margin="3dp">
+    android:id="@+id/idRVStates"
+    >
 
 </androidx.recyclerview.widget.RecyclerView>
 
